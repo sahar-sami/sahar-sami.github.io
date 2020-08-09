@@ -1,0 +1,121 @@
+@media (min-width: 768px) {
+    .image-wrapper {
+        /*margin: 15px;*/
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+#about p {
+    color: #ac5864
+}
+
+#freelance p {
+    color: #ac5864;
+}
+
+#contact p {
+    color: #6874e8;
+}
+
+h1 {
+    color: #b76e79;
+}
+
+.about {
+    color: #AC5864;
+    padding: 0px 0px;
+    /*width: 100%;*/
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .about {
+        display: flex;
+    }
+}
+
+.btn1:hover, .btn1:focus {
+    background-color: #efcfc4;
+    color: #b76e79;
+}
+
+.btn1 {
+    background-color: #b76e79;
+    color: white;
+}
+
+.contact-btn.focus, .contact-btn:focus, .contact-btn:hover {
+    color: white;
+    background-color: #6874e8;
+    border-color: #6874e8;
+}
+
+.contact-btn {
+    color: #6874e8;
+    border: 1px solid #6874e8;
+    background-color: transparent;
+    font-family: Cabin,Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+
+.contact-btn:active {
+    border: 3px solid white;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0 rgb(255,255,255);
+}
+
+#mainNav .nav-link.active {
+    background-color: rgba(239,207,196,0.5); 
+}
+
+#mainNav .nav-link {
+    color: #ac5864;
+}
+
+section {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+img-fluid{
+    max-width: 100%;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #efcfc4;
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(239,207,196, 0.25);
+}
+
+
+.portfolio-item{
+    display:block;
+    position:relative;
+    overflow:hidden;
+    max-width:530px;
+    margin:auto auto 1rem;}
+
+.portfolio-item .caption{
+    display:-ms-flexbox;
+    display:flex;
+    height:100%;
+    width:100%;
+    background-color:rgba(33,37,41,.2);
+    position:absolute;
+    top:0;
+    bottom:0;
+    z-index:1;}
+
+.portfolio-item .caption.dark:not(:hover) {
+    background-color:rgba(0,0,0,0.4);
+}
+
+.portfolio-item .caption .caption-content{color:#fff;margin:auto 2rem 2rem}
+.portfolio-item .caption .caption-content h2{font-size:1.5rem;text-transform:uppercase}.portfolio-item .caption .caption-content p{font-weight:300;font-size:1.2rem}@media (min-width:992px){.portfolio-item{max-width:none;margin:0}.portfolio-item .caption{-webkit-transition:-webkit-clip-path .25s ease-out,background-color .7s;-webkit-clip-path:inset(0);clip-path:inset(0)}.portfolio-item .caption .caption-content{transition:opacity .25s;margin-left:5rem;margin-right:5rem;margin-bottom:5rem}.portfolio-item img{-webkit-transition:-webkit-clip-path .25s ease-out;-webkit-clip-path:inset(-1px);clip-path:inset(-1px)}.portfolio-item:hover .caption,.portfolio-item:hover img{-webkit-clip-path:inset(2rem);clip-path:inset(2rem)}.portfolio-item:hover .caption{background-color:rgba(172,88,100,0.9);}}

@@ -1,6 +1,10 @@
 (function($) {
   "use strict"; // Start of use strict
     
+    $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    
     $('#resume-toggle').click(function(){
      if ($(this).html() == "VIEW RESUME"){
          $(this).html("CLOSE RESUME");
@@ -47,5 +51,5 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
-
+    
 })(jQuery); // End of use strict

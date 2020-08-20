@@ -18,6 +18,10 @@ body {
     color: #b76e79;
 }
 
+#mainNav {
+    background-color: rgba(255, 255, 255, 0);
+}
+
 .about {
     margin-left: 150px; 
     margin-right: 150px;  

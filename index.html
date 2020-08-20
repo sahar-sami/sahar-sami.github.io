@@ -14,17 +14,22 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+    <style>
+      /* Ensure elements are hidden while ScrollEntrance is loading */
+      [data-entrance] { visibility: hidden; }
+</style>
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(33,11,125,0);">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="#" style="color: #5F81A6;"><img src="assets/img/sunlogo.png" style="vertical-align: top; max-height: 64px; max-width: 64px;"></a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="border-color: #5F81A6;"><i class="fa fa-bars" style="color: #5F81A6;"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a></li>
 <!--                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#freelance">Free Editing</a></li>-->
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#fun">Fun</a></li>
                     <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -34,13 +39,13 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-8 mx-auto" data-entrance="from-bottom">
                         <h1 class="brand-heading" style="color: #5F81A6;">Sahar Sami</h1>
                         <p class="intro-text" style="color: #2B3A67;">Student Data Analyst and Software Engineer</p>
                         <div class="social-icons">
-                            <a href = "mailto: sahar.sami115@gmail.com"><i class="fa fa-envelope fa-fw"></i> </a>
-                            <a href="https://www.linkedin.com/in/sahar-sami/"><i class="fa fa-linkedin-square fa-fw"></i></a>
-                            <a href="https://github.com/sahar-sami"><i class="fa fa-github fa-fw"></i></a>
+                            <a href = "mailto: sahar.sami115@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i> </a>
+                            <a href="https://www.linkedin.com/in/sahar-sami/" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i></a>
+                            <a href="https://github.com/sahar-sami" target="_blank"><i class="fa fa-github fa-fw"></i></a>
 <!--                            <a href="#"><i class="fab fa-medium-m fa-fw"></i></a>-->
                         </div>
                         <a class="btn btn-link btn-circle js-scroll-trigger" role="button" href="#about" style="color: #b76e79;border-color: #2B3A67;"><i class="fa fa-angle-double-down animated"></i></a></div>
@@ -51,55 +56,146 @@
     <section id="about" class="text-center">
         <h1>About Me</h1>
         <div class="about">
-            <div class="image-wrapper" style="margin: 15px;"><img class="rounded-circle" src="assets/img/purple-sweater.JPG" style="max-width: 300px;width: 100%; text-align: center; vertical-align: middle; height: 100%; "></div>
-            <div style="padding: 15px; width: 100%; vertical-align: middle; height: 100%; display: inline-block ">
-                <p style = "vertical-align: middle; height: 100%;">Who I Am: Hi! I'm Sahar (she/her), and I love solving problems through code and finding patterns in data. I'm currently a sophomore at Cornell University majoring in computer science. My main interests within tech are backend development, machine learning, and data science. Outside of tech, I enjoy painting, drawing, and listening to music. I care about making a positive impact through my work, whether I'm helping one person or one thousand. I'm also energized by working with cutting-edge technology.<br><br>What I Do: I'm a member of <a href="https://cornellcuprobotics.com/">Cornell Cup Robotics</a>, a project team where I'm working on a voice-enabled chatbot. I'm also an intern for a rising startup called <a href="https://polici.org/">Polici</a>, which is dedicated to making important research easy to understand and accessible. Right now, I'm looking for summer internship opportunities in software engieering and data analytics.</p>
+            <div class="image-wrapper" style="margin: 15px;" data-entrance = "from-left"><img class="rounded-circle" src="assets/img/purple-sweater.JPG" style="max-width: 300px;width: 100%; text-align: center; vertical-align: middle; height: 100%; "></div>
+            <div  data-entrance = "from-right" style="padding: 15px; width: 100%; vertical-align: middle; height: 100%; display: inline-block;">
+                <p style = "vertical-align: middle; height: 100%;">Hi! I'm Sahar (she/her), and I love solving problems through code and finding patterns in data. I'm currently a sophomore at Cornell University majoring in computer science. My main interests within tech are backend development, machine learning, and data science. Outside of tech, I enjoy painting, drawing, and listening to music. I care about making a positive impact through my work, whether I'm helping one person or one thousand. I'm also energized by working with cutting-edge technology.<br>
             </div>
         </div>
+<!--
+        <h2>Where I Study</h2>
+        <div class = "education">
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h4 class="mb-0">Cornell University</h4>
+                    <div class="subheading mb-3">Bachelor of Science</div>
+                    <div>Computer Science</div>
+                    <p>GPA: 3.85 / 4.3</p><br>
+                    <div class="subheading mb-3">Coursework</div>
+                    <div style="float: left; width: 50%">
+                        Object-Oriented Programming and Data Structures<br>
+                        Introduction to Backend Development<br>
+                        Discrete Structures<br>
+                        Engineering Applications of Operations Research<br>
+                    </div>
+                    <div style="float: right; width: 50%">
+                        Linear Algebra for Engineers<br>
+                        Data Structures and Functional Programming (Fall 2020)<br>
+                        Probability Models and Inference (Fall 2020)<br>
+                        Introduction to Machine Learning (Fall 2020)
+
+                    </div>
+                </div>
+                <div class="flex-shrink-0"><p>August 2017 - December 2020</p></div>
+            </div>
+        </div>
+        <h2>What I Do</h2>
+-->
     </section>
     <section id="portfolio" class="text-center" style="background-color: #DEF2FD;">
         <h1 style="margin: 0px 0px 10px;">Portfolio</h1>
-        <p style = "color: 2B3A67;">Learn a bit more about the work I've done and some cool projects I've made. Updating this section soon!</p>
-        <button id = "resume-toggle" class = "btn btn1" type = "button" data-toggle = "collapse" href = "#resume-pdf" onclick = "toggle()" style = "margin-bottom: 10px; font-size: 20px;">VIEW RESUME</button>
-        <object class = "collapse" id = "resume-pdf" data="assets/Sahar-Sami-Resume-Main.pdf" type="application/pdf" width="100%" height="800px"> 
-        <p>It appears you don't have a PDF plugin for this browser.
-   No biggie... you can <a href="resume.pdf">click here to
-  download the PDF file.</a></p>  
-        </object>
-        <div class="container" style = "margin-top: 10px; padding: 50px;">
-            <h2>Software Projects</h2>
-            <div class = "row projects justify-content-center">
-                <div class="col-lg-6">
-              <div class = "project-desc">
-            <img src="assets/img/a-list.jpg" alt="Screenshot from A-List App" width="200" height="200">
-            <h3>A-List</h3>
-            <p>I worked with three other students to create an iOS app for Cornell AppDev's Hack Challenge. This app consolidates celebrities' social media and websites so users can keep track of new activity from their favorite celebrities in one place.</p>
-            <p><a class="btn btn-secondary" href="https://github.com/gsmith7889/A-List" role="button">View Project &raquo;</a></p>
+        <h2>Experience</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-5" data-entrance = "from-left">
+            <img class="rounded-circle" src="assets/img/ccrt.JPG" alt="Generic placeholder image" width="140" height="140">
+            <h4 style = "margin: 0">Cornell Cup Robotics Team</h4>
+              <p style = "margin: 0"><b>Computer Science Subteam Member</b></p>
+            <p>Cornell Cup is an engineering project team that designs and builds robots. I'm currently using machine learning and natural language processing to work on a chatbot activated by voice recognition for an R2-D2 style robot.</p>
+            <p><a class="btn btn-secondary" href="https://cornellcuprobotics.com/" role="button">Team website &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-5" data-entrance = "from-right">
+            <img class="rounded-circle" src="assets/img/polici.JPG" alt="Polici Logo" width="140" height="140">
+            <h4 style = "margin: 0">Polici</h4>
+              <p style = "margin: 0"><b>Data Science Intern</b></p>
+            <p>Polici is a startup that uses artificially intelligent text summarization algorithms to simplify research papers to make them accessible to the public. I have been researching and applying NLP techniques by working on Polici's technology team.</p>
+            <p><a class="btn btn-secondary" href="https://polici.org/" role="button">polici.org &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+        
+        <h2>Projects</h2>
+        <p style = "color: 2B3A67;">These are a few cool projects I've made or helped work on!</p>
+        <div id="myBtnContainer" class = "container">
+  <button class="btn active" data-filter = "*"> All</button>
+  <button class="btn" data-filter = ".software"> Software</button>
+  <button class="btn" data-filter  = ".data-science"> Data Science</button>
+</div>
+        <div class="container">
+          <div class="row justify-content-center" id = "projects-row">
+            <div class="col-md-4 projectCard software">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src = "assets/img/a-list.jpg" height= 250 width = 150 alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"><b>A-List &nbsp;</b>I worked with 3 other students to create an iOS app for Cornell AppDev's Hack Challenge. This app consolidates celebrities' social media and websites so users can keep track of new activity from their favorite celebrities in one place. I developed the backend of the app using Flask to update a relational database that stored the app's information.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a type="button" class="btn btn-outline-secondary" href = "https://github.com/sahar-sami/alist-backend" target="_blank">View</a>
+                    </div>
+                    <small class="text-muted">Software</small>
                   </div>
-          </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="container" style = "margin-top: 10px; padding: 50px;">
-            <h2>Data Science Projects</h2>
-            <div class="row projects justify-content-center">
-          <div class="col-lg-6">
-              <div class = "project-desc">
-            <img src="assets/img/day6.JPG" alt="Spotify Image" width="200" height="200">
-            <h3>Spotify Data Analysis</h3>
-            <p>I used Spotify's Web API and Python to analyze music from my favorite band and cluster similar songs into playlists.</p>
-            <p><a class="btn btn-secondary" href="https://github.com/sahar-sami/day6_spotify" role="button">View Project &raquo;</a></p>
+              <div class="col-md-4 projectCard data-science">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src = "assets/img/day6.png" height= 250 width = 150 alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"><b>Spotify Data Analysis &nbsp;</b>I used Spotify's Web API and Python to analyze music from my favorite band. This was a way for me to practice data visualization and basic analysis. I also performed K-Means Clustering to group similar songs into clusters.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a type="button" class="btn btn-outline-secondary" href = "https://github.com/sahar-sami/day6_spotify" target="_blank">View</a>
+                    </div>
+                    <small class="text-muted">Data Science</small>
                   </div>
-          </div>
-          <div class="col-lg-6">
-              <div class = "project-desc">
-            <img src="assets/img/office-supplies.jpg" alt="Generic placeholder image" width="200" height="200">
-            <h3>Office Supply Store Project</h3>
-            <p>A capstone project for a data science training program where I developed predictive models from office supply store data.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+              <div class="col-md-4 projectCard data-science">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src = "assets/img/office-chart.jpg" height= 250 width = 150 alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"><b>Office Supply Store Data Analysis &nbsp;</b>I completed a capstone project for a data science training program where I developed predictive models from office supply store data. I used these models as well as data visualization to provide insights for the types of customers that would contribute to the most profit.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a type="button" class="btn btn-outline-secondary" href = "https://github.com/sahar-sami/bbds-officesupplystore" target="_blank">View</a>
+                    </div>
+                    <small class="text-muted">Data Science</small>
                   </div>
-          </div>
+                </div>
+              </div>
         </div>
+<!--
+              <div class="col-md-4 projectCard software">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src = "https://via.placeholder.com/250x150" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"><b>Level Learning &nbsp;</b>I'm helping to develop the backend of a website containing accessible math games for children with learning disabilities.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a type="button" class="btn btn-outline-secondary">To be Released</a>
+                    </div>
+                    <small class="text-muted">Software</small>
+                  </div>
+                </div>
+              </div>
         </div>
+-->
+              
+    </div>
+</div>
+        <div class="container">
+            <h3>Other Projects</h3>
+            <div class = "row justify-content-center">
+                <div class = "col-lg-8">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Cozy: &nbsp;</b>A Google Chrome extension that uses a home address from a housing website like Zillow or Trulia to display information about natural disaster risks in the area.</li>
+                    <li class="list-group-item"><b>Memory Match Game: &nbsp;</b>A very basic memory matching game programmed in C++. One of my earliest fully individual projects.</li>
+  </ul>
+                </div>
+            </div>
+            
+        </div>
+            
+
+            
         
     </section>
 <!--
@@ -124,31 +220,49 @@
         
     </section>
 -->
-    <section id="contact" class="text-center" style="background-color: white;">
+    <section id = "fun" class = "text-center" style = "background-color: white">
+    <h1>Fun Hobbies</h1>
+        <p>I enjoy drawing and painting as a creative and fun outlet. These are some pieces I've made recently!</p>
+        <div class = "masonry" id = "artphotos">
+            <img class = "grid-item"  src = "assets/img/art/1.jpg">
+            <img class = "grid-item"  src = "assets/img/art/3.jpg">
+            <img class = "grid-item"  src = "assets/img/art/2.jpg">
+            <img class = "grid-item"  src = "assets/img/art/4.jpg">
+            <img class = "grid-item"  src = "assets/img/art/5.jpg">
+        </div>
+    </section>
+    <section id="contact" class="text-center" style="background-color: #DEF2FD;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h1>Contact Me</h1>
-                    <p>Message on LinkedIn or email me if you would like to get in touch! </p>
+                    <p>I'm currently looking for Summer 2021 internships in software engineering or data science. I would also love to connect with other passionate individuals. Get in touch with me or check out some of my other work at with one of my online profiles!</p>
                     <ul class="list-inline banner-social-buttons">
-                        <li class="list-inline-item">&nbsp;<button class="btn contact-btn" type="button" href = "https://www.linkedin.com/in/sahar-sami/"><i class="fa fa-linkedin-square fa-fw"></i><span class="network-name">&nbsp;LINKEDIN</span></button></li>
-                        <li class="list-inline-item">&nbsp;<button class="btn contact-btn" type="button" href = "mailto: sahar.sami115@gmail.com"><i class="fa fa-envelope fa-fw"></i><span class="network-name">&nbsp;EMAIL</span></button></li>
-                        <li class="list-inline-item">&nbsp;<button class="btn contact-btn" type="button" href="https://github.com/sahar-sami"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;GITHUB</span></button></li>
+                        <li class="list-inline-item">&nbsp;<a class="btn contact-btn" type="button" href = "https://www.linkedin.com/in/sahar-sami/" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i><span class="network-name">&nbsp;LINKEDIN</span></a></li>
+                        <li class="list-inline-item">&nbsp;<a class="btn contact-btn" type="button" href = "mailto: sahar.sami115@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i><span class="network-name">&nbsp;EMAIL</span></a></li>
+                        <li class="list-inline-item">&nbsp;<a class="btn contact-btn" type="button" href="https://github.com/sahar-sami" target="_blank"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;GITHUB</span></a></li>
+                        <li class="list-inline-item">&nbsp;<a class="btn contact-btn" type="button" href="https://twitter.com/sahar_sxmi" target="_blank"><i class="fa fa-twitter fa-fw"></i><span class="network-name">&nbsp;TWITTER</span></a></li>
                     </ul>
+                    <button id = "resume-toggle" class = "btn btn1" type = "button" data-toggle = "collapse" href = "#resume-pdf" onclick = "toggle()" style = "margin-bottom: 10px; font-size: 20px;">VIEW RESUME</button>
+                        <object class = "collapse" id = "resume-pdf" data="assets/Sahar-Sami-Resume-Main.pdf" type="application/pdf" width="100%" height="800px"> 
+                        <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="resume.pdf">click here to download the PDF file.</a></p>  
+                        </object>
                 </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="container text-center">
-            <p>Designed by Sahar Sami</p>
+            <p>Copyright © Sahar Sami 2020</p>
         </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="https://use.fontawesome.com/2e21226d8b.js"></script>
+    <script src="assets/js/scroll-entrance.js"></script>
 </body>
 
 </html>

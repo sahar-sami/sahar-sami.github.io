@@ -5,6 +5,7 @@ body {
 
 #mainNav.navbar-shrink {
     border-bottom: none;
+    background-color: white;
 }
 
 .masthead {
@@ -12,9 +13,14 @@ body {
     background-position: center;
 }
 
+.social-icons i {
+    font-size: 1.5rem;
+    color: #b76e79;
+}
+
 .about {
-    padding-left: 150px; 
-    padding-right: 150px;  
+    margin-left: 150px; 
+    margin-right: 150px;  
     vertical-align: middle; 
     height: 100%;
 }
@@ -35,11 +41,9 @@ body {
     }
 }
 
-.social-icons i {
-    font-size: 1.25rem;
-    color: #b76e79;
+.experience-wrapper {
+    display: inline-block;
 }
-
 
 .loader-wrapper {
   width: 100%;
@@ -51,36 +55,6 @@ body {
   display:flex;
   justify-content: center;
   align-items: center;
-}
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #Fff;
-  animation: loader 2s infinite ease;
-}
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
-}
-
-@keyframes loader {
-  0% { transform: rotate(0deg);}
-  25% { transform: rotate(180deg);}
-  50% { transform: rotate(180deg);}
-  75% { transform: rotate(360deg);}
-  100% { transform: rotate(360deg);}
-}
-@keyframes loader-inner {
-  0% { height: 0%;}
-  25% { height: 0%;}
-  50% { height: 100%;}
-  75% { height: 100%;}
-  100% { height: 0%;}
 }
 
 #freelance p {
@@ -139,7 +113,7 @@ h1 {
   box-shadow: 0 0 0 0 rgb(255,255,255);
 }
 
-#mainNav .nav-link.active {
+#mainNav .nav-link.active, .nav-link:hover{
     background-color: rgba(169,222,249,0.5); 
 }
 
@@ -158,57 +132,71 @@ img-fluid{
     max-width: 100%;
 }
 
-@media (min-width: 992px) {
-    #portfolio .col-lg-6 {
-    height: 450px;
-    font-size: 1rem;
-    }
-    #portfolio .col-lg-6 .project-desc {
-        background-color: white;
-    }
-}
-}
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
-@media (min-width: 360px) {
-    #portfolio .col-lg-6 {
-    height: 100%;
-    max-height: 450px;
+#myBtnContainer {
     margin-bottom: 20px;
-    }
-}
-
-#portfolio .project-desc {
-        height: inherit;
-        background-color: white;
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-
-.project-desc .btn-secondary {
-    background-color: #5F81A6;
     
 }
 
-.project-desc .btn-secondary:hover {
-    background-color: #DEF2FD;
-    color: #242f3f;
+#myBtnContainer .btn:hover, #myBtnContainer .btn.active {
+    background-color: white;
+    }
+
+#myBtnContainer .btn {
+    border: 1px solid #2B3A67;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.projectCard p {
+    font-size: 0.8rem;
+}
+
+.projectCard .btn {
+    color: #b76e79;
+    border: 1px solid #b76e79;
+}
+
+.projectCard a.btn:hover {
+    background-color: #b76e79;
+    color: white;
+}
+
+.masonry { /* Masonry container */
+    column-count: 3;
+    column-gap: 1em;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.grid-item { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+   .masonry { /* Masonry container */
+  column-count: 1;
+  column-gap: 1em;
+    } 
+}
+
+a {
+    color: #b76e79;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #b76e79;
     border: none;
-    
 }
 
-.project-desc h3 {
-    padding-top: 10px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+.btn-secondary:hover {
+    color: white;
+    background-color: #b76e79;
+    border: none;
 }
-
-.project-desc p {
-    font-size: 1rem;
-}
-
-
-
-
-

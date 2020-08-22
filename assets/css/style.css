@@ -23,8 +23,8 @@ body {
 }
 
 .about {
-    margin-left: 150px; 
-    margin-right: 150px;  
+    margin-left: 100px; 
+    margin-right: 100px;  
     vertical-align: middle; 
     height: 100%;
 }
@@ -34,7 +34,15 @@ body {
     text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+.image-wrapper img {
+    max-width: 300px;
+    width: 100%;
+    text-align: center; 
+    vertical-align: middle; 
+    height: 100%;
+}
+
+@media (min-width: 992px) {
     .image-wrapper {
         /*margin: 15px;*/
         max-width: 400px;
@@ -42,6 +50,16 @@ body {
         display: inline-block;
         vertical-align: middle;
         height: 100%
+    }
+}
+
+.about {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .about {
+        display: flex;
     }
 }
 
@@ -71,18 +89,6 @@ body {
 
 h1 {
     color: #5F81A6;
-}
-
-.about {
-    padding: 0px 0px;
-    /*width: 100%;*/
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    .about {
-        display: flex;
-    }
 }
 
 .btn1:hover, .btn1:focus {

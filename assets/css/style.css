@@ -110,23 +110,6 @@ h1 {
     color: white;
 }
 
-.contact-btn.focus, .contact-btn:focus, .contact-btn:hover {
-    color: white;
-    background-color: #b76e79;
-    border-color: #b76e79;
-}
-
-.contact-btn {
-    color: #b76e79;
-    border: 1px solid #b76e79;
-    background-color: transparent;
-    font-family: Cabin,Helvetica Neue,Helvetica,Arial,sans-serif; 
-}
-
-.contact-btn:active {
-    border: 3px solid white;
-}
-
 .btn.focus, .btn:focus {
   outline: 0;
   box-shadow: 0 0 0 0 rgb(255,255,255);
@@ -209,13 +192,13 @@ a {
 }
 
 .btn-secondary {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0);
     color: #b76e79;
-    border: none;
+    border: 1px solid #b76e79;
 }
 
 .btn-secondary:hover {
     color: white;
     background-color: #b76e79;
-    border: none;
+    border: 1px solid #b76e79;
 }

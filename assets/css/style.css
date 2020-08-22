@@ -42,6 +42,15 @@ body {
     height: 100%;
 }
 
+
+@media (max-width: 576px) {
+    .about {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+
 @media (min-width: 992px) {
     .image-wrapper {
         /*margin: 15px;*/
